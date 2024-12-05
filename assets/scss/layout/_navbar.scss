@@ -1,0 +1,142 @@
+.navhead {
+  height: 100px;
+  width: 100%;
+    background-color: #043873;
+  display: flex;
+  justify-content: space-between;
+
+  .headleft {
+    height: 100px;
+    width: 20%;
+
+    gap: 10px;
+    display: flex;
+    .lficon {
+      height: 20px;
+      width: 20px;
+      margin-top: 25px;
+      margin-left: 30px;
+      
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .lfword {
+      color: aliceblue;
+    }
+  }
+  .headright {
+    height: 100px;
+    display: flex;
+    gap: 40px;
+    .rgword {
+      display: flex;
+      gap: 40px;
+      color: aliceblue;
+      margin-top: 15px;
+    }
+    .rgboxs {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+      margin-right: 20px;
+      .login {
+        height: 35px;
+        width: 70px;
+        background-color: burlywood;
+        border: 1px solid rgb(226, 206, 23);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3%;
+        p {
+          text-align: center;
+          color: rgb(13, 138, 247);
+        }
+      }
+      .try {
+        height: 35px;
+        width: 120px;
+        background-color: rgb(23, 119, 245);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3%;
+        p {
+          font-size: 15px;
+          color: aliceblue;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+.navhead{
+  .headright{
+    .rgword{
+      display: none;
+    }
+    .rgboxs{
+      display: none;
+    }
+  }
+}
+.hamburger{
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-right: 20px;
+  gap: 2px;
+  .line1{
+    height: 3px;
+    width: 25px;
+    background-color: black;
+  }
+  .line2{
+    height: 3px;
+    width: 25px;
+    background-color: black;
+  }
+  .line3{
+    height: 3px;
+    width: 25px;
+    background-color: black;
+  }
+}
+}
+@media screen and (max-width: 350px) {
+.navhead{
+  .headright{
+    .rgword{
+      display: none;
+    }
+    .rgboxs{
+      display: none;
+    }
+  }
+
+}
+
+.hamburger{
+  display: flex;
+  flex-direction: column;
+  .line1{
+    height: 3px;
+    width: 10px;
+    background-color: black;
+  }
+  .line2{
+    height: 3px;
+    width: 10px;
+    background-color: black;
+  }
+  .line3{
+    height: 3px;
+    width: 10px;
+    background-color: black;
+  }
+}
+
+}
